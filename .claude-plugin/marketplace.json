@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "steve",
+  "owner": {
+    "name": "Matteo Bergamelli",
+    "url": "https://github.com/bergamett"
+  },
+  "description": "Ask Steve: a Steve Jobs reasoning skill for Claude Code.",
+  "plugins": [
+    {
+      "name": "steve",
+      "source": "./",
+      "description": "Ask Steve. Think like Steve Jobs about whatever you are building: verdict, insight, what to cut, next move, the one sentence.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "license": "MIT",
+      "keywords": ["steve-jobs", "product", "simplicity", "focus", "strategy", "pitch", "review"]
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ask Steve — a Steve Jobs reasoning skill for Claude Code</title>
+<meta name="description" content="Not a Steve Jobs chatbot. A Steve Jobs review. A skill that reads what you built and tells you the verdict, the insight underneath, what to cut, the next move, and the one sentence that sells it.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
+<meta property="og:title" content="Ask Steve — a Steve Jobs reasoning skill for Claude Code">
+<meta property="og:description" content="Not a Steve Jobs chatbot. A Steve Jobs review.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bergamett.github.io/steve-jobs-skill/">
+<meta property="og:image" content="https://raw.githubusercontent.com/bergamett/steve-jobs-skill/main/assets/hero.svg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --bg:#f5f5f7; --panel:#ffffff; --ink:#111114; --muted:#6e6e73; --line:#d8d8dd;
+  --term-bg:#0f0f12; --term-ink:#e8e8ed; --term-dim:#8a8a92; --accent:#111114;
+  --red:#ff5f57; --yellow:#febc2e; --green:#28c840;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Inter,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0a0c; --panel:#131317; --ink:#f5f5f7; --muted:#9a9aa2; --line:#26262c;
+    --term-bg:#08080a; --term-ink:#e8e8ed; --term-dim:#7d7d86; --accent:#f5f5f7;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0a0c; --panel:#131317; --ink:#f5f5f7; --muted:#9a9aa2; --line:#26262c;
+  --term-bg:#08080a; --term-ink:#e8e8ed; --term-dim:#7d7d86; --accent:#f5f5f7;
+}
+*{box-sizing:border-box;min-width:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip;overflow-wrap:break-word}
+img{max-width:100%}
+a{color:inherit}
+.wrap{max-width:900px;margin:0 auto;padding-inline:20px}
+section{padding-block:72px}
+h1,h2,h3{letter-spacing:-.02em;line-height:1.1;margin:0}
+h2{font-size:clamp(28px,4.5vw,40px);font-weight:700;margin-bottom:14px}
+h3{font-size:19px;font-weight:650;margin-bottom:6px}
+p{margin:0 0 16px}
+.lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:62ch}
+.small{font-size:15px;color:var(--muted)}
+
+/* hero */
+header{padding-block:clamp(56px,9vw,110px) 40px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+h1{font-size:clamp(46px,10vw,96px);font-weight:700;letter-spacing:-.045em}
+.tagline{font-size:clamp(19px,2.8vw,26px);font-weight:600;margin:18px 0 10px}
+.hero-sub{max-width:56ch;color:var(--muted);font-size:clamp(16px,2vw,19px)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:hover{opacity:.85}
+
+/* terminal */
+.term{background:var(--term-bg);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:34px;box-shadow:0 20px 50px rgba(0,0,0,.14);max-width:100%}
+.term .bar{display:flex;gap:8px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.07)}
+.dot{width:11px;height:11px;border-radius:50%}
+.term pre{margin:0;padding:20px 22px 24px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.75;color:var(--term-ink);white-space:pre;max-width:100%}
+@media (max-width:560px){.term pre{font-size:11px;padding:16px 14px 18px}pre.code{font-size:12.5px}}
+.term .c{color:var(--term-dim)}
+.term .b{color:#fff;font-weight:700}
+.term .p{color:#7ee787}
+@media (prefers-color-scheme:light){.term .p{color:#3fb950}}
+
+/* grid */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:28px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.card .k{font-family:var(--mono);font-size:13px;color:var(--muted);margin-bottom:8px}
+
+/* table */
+.tablewrap{overflow-x:auto;max-width:100%;margin-top:24px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:15.5px;min-width:520px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+td code,.mono{font-family:var(--mono);font-size:14px}
+
+/* code block */
+pre.code{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:14px;line-height:1.7;margin:0 0 14px}
+
+/* compare */
+.compare{display:grid;gap:18px;grid-template-columns:1fr 1fr;margin-top:26px}
+@media (max-width:720px){.compare{grid-template-columns:1fr}}
+.compare > div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.compare h3{margin-bottom:12px}
+.compare .label{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
+blockquote{margin:0;font-size:15.5px;color:var(--muted);border-left:2px solid var(--line);padding-left:14px}
+
+ul.plain{margin:0;padding-left:20px;color:var(--muted)}
+ul.plain li{margin-bottom:9px}
+
+details{border-bottom:1px solid var(--line);padding:16px 0}
+details summary{cursor:pointer;font-weight:600;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";font-family:var(--mono);color:var(--muted);margin-right:10px}
+details[open] summary::before{content:"–"}
+details p{margin:12px 0 0;color:var(--muted);font-size:15.5px}
+
+footer{border-top:1px solid var(--line);padding-block:40px 56px;color:var(--muted);font-size:14.5px}
+footer a{color:var(--ink)}
+.divider{border:0;border-top:1px solid var(--line);margin:0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">A skill for Claude Code</div>
+    <h1>Ask Steve.</h1>
+    <p class="tagline">Not a Steve Jobs chatbot. A Steve Jobs review.</p>
+    <p class="hero-sub">It reads what you actually built, runs it, and tells you the verdict, the insight underneath, what to cut, the next move, and the one sentence that sells it.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/bergamett/steve-jobs-skill">Get it on GitHub</a>
+      <a class="btn ghost" href="#install">Install in 10 seconds</a>
+      <a class="btn ghost" href="#examples">See a real answer</a>
+    </div>
+
+    <div class="term">
+      <div class="bar"><span class="dot" style="background:var(--red)"></span><span class="dot" style="background:var(--yellow)"></span><span class="dot" style="background:var(--green)"></span></div>
+<pre><span class="c">&gt;</span> <span class="b">/steve verdict README.md</span>
+
+<span class="c">Mode: verdict · the README first screen</span>
+
+<span class="b">Verdict.</span> Not yet. Nothing on the first screen says what this
+does — put the Usage block at the top and it becomes great.
+
+<span class="b">What's wrong.</span>
+1. The Introduction says nothing. Forty words of adjectives
+   before a verb that means anything. Cross them out and what
+   is left is "it runs your tasks in order" — which is true,
+   and clear, and you did not say it.
+2. Nine commands to first run, five secrets to invent. A
+   stranger has to learn what a JWT_SECRET is before your
+   product does one thing. That is where you lose them.
+3. Fifteen features, all weighted the same. When everything is
+   listed, nothing is chosen. That is a backlog, not a product.
+
+<span class="b">The one thing.</span> <span class="p">"Write a pipeline in ten lines of
+JavaScript. One command runs it."</span>
+
+<span class="b">Do this.</span> Put the product in the first ten lines. Then make
+the install match the promise: <span class="p">npx taskflow init</span> writes the
+.env, generates the secrets and migrates. Nine steps become one.
+
+<span class="b">What Steve would say.</span> <span class="c">(imagined)</span> "You wrote eleven headings
+before you told me what it does. Delete ten of them."</pre>
+    </div>
+    <p class="small" style="margin-top:14px">Real output. Nothing hand-polished.</p>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Every other Steve Jobs prompt answers “who was Steve Jobs?”</h2>
+    <p class="lede">Nobody needs that. You need the other thing: someone who looks at the thing you actually made, this afternoon, and says the sentence you have been avoiding.</p>
+    <div class="grid">
+      <div class="card"><div class="k">01</div><h3>It holds the thing</h3><p>Reads your files, runs your CLI, counts the steps from clone to the first moment something works. It never reviews a description of your product.</p></div>
+      <div class="card"><div class="k">02</div><h3>It ends with a rewrite</h3><p>A critique that stops at the critique is a roast. Every reply hands back the new headline, the three features that stay, the error message that now tells you what to do.</p></div>
+      <div class="card"><div class="k">03</div><h3>Every quote is sourced</h3><p>Venue, year and link for every line he said, plus a table of the famous ones he never said. Imagined lines are labelled imagined.</p></div>
+      <div class="card"><div class="k">04</div><h3>It knows where he was wrong</h3><p>The Cube. MobileMe. “Seven-inch tablets are dead on arrival.” And when to stop listening to him: accessibility, safety-critical domains, and your own usage data.</p></div>
+      <div class="card"><div class="k">05</div><h3>It is short</h3><p>One screen. Verdict first. If a sentence does not change what you do next, it is not in there.</p></div>
+      <div class="card"><div class="k">06</div><h3>It attacks the work, never you</h3><p>He could be cruel. This is not that. Brutal about the thing, generous about the person who made it.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="modes">
+  <div class="wrap">
+    <h2>Six modes</h2>
+    <p class="lede">We had eleven. We crossed out five.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Mode</th><th>The question it answers</th><th>Give it</th></tr></thead>
+        <tbody>
+          <tr><td><code>verdict</code></td><td>What would Steve say about this?</td><td>a README, a landing page, a UI, a CLI, an API, a pull request</td></tr>
+          <tr><td><code>why</code></td><td>What is the insight underneath?</td><td>a product, a feature request, a strategy, a nagging feeling</td></tr>
+          <tr><td><code>cut</code></td><td>Which seven do we cross out?</td><td>a roadmap, a backlog, a settings page, a pricing table</td></tr>
+          <tr><td><code>next</code></td><td>What is the one bet?</td><td>a company, a repo, a plateau, a competitor's move</td></tr>
+          <tr><td><code>pitch</code></td><td>How do I say this in one sentence?</td><td>a tagline nobody gets, a first screen, a Show HN title</td></tr>
+          <tr><td><code>email</code></td><td>How do I answer this?</td><td>a feature request, a complaint, a partnership ask</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:16px">No mode? It picks one and tells you which.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="examples">
+  <div class="wrap">
+    <h2>With the skill, and without</h2>
+    <p class="lede">The same question, asked twice. A Chrome extension that summarizes articles: 4,000 weekly users, no revenue, three features planned.</p>
+    <div class="compare">
+      <div>
+        <div class="label">Without the skill</div>
+        <h3>A competent list</h3>
+        <blockquote>“Focus is about saying no to the good ideas. You have Q&amp;A chat, Notion export, and a paid tier on the roadmap… Jobs would likely favor the one that deepens the core promise… Want me to help you sketch the pricing page copy?”</blockquote>
+        <p class="small" style="margin-top:12px">Five headings, a pros-and-cons, and a question at the end. Nothing you could not have written yourself.</p>
+      </div>
+      <div>
+        <div class="label">With the skill</div>
+        <h3>An argument</h3>
+        <blockquote>“Stop summarizing articles. Start remembering them. In two years ‘summarize this page’ is a free button in Chrome. The article is the wrong unit. The reader is the unit. Four thousand people have been handing you what they read, every week, for months.”</blockquote>
+        <p class="small" style="margin-top:12px">A bet, the arithmetic behind it, the three moves, what to say no to, and the signal that would prove it wrong.</p>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="btn ghost" href="https://github.com/bergamett/steve-jobs-skill/tree/main/examples">Read all the examples</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="install">
+  <div class="wrap">
+    <h2>Install</h2>
+    <p class="lede">Two lines in Claude Code. One line anywhere else.</p>
+
+    <h3 style="margin-top:26px">Claude Code</h3>
+    <pre class="code">/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@steve</pre>
+
+    <h3>Any agent that reads SKILL.md</h3>
+    <pre class="code">npx skills add bergamett/steve-jobs-skill</pre>
+    <p class="small">Claude Code, Codex, Cursor, Gemini CLI, OpenCode.</p>
+
+    <h3>By hand</h3>
+    <pre class="code">git clone https://github.com/bergamett/steve-jobs-skill
+cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve</pre>
+
+    <p style="margin-top:22px">Then type <code class="mono">/steve</code> and whatever is bothering you.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="for">
+  <div class="wrap">
+    <h2>What it is for</h2>
+    <ul class="plain">
+      <li>You have thirty features and no sentence.</li>
+      <li>Everyone asked for something and you said yes to all of it.</li>
+      <li>Your landing page makes sense to you and to nobody else.</li>
+      <li>You cannot tell whether the thing you shipped is good.</li>
+      <li>You know what to build next but not what to stop.</li>
+      <li>Somebody wants a feature and you cannot find the words for no.</li>
+      <li>Your README's first screen is a table of contents.</li>
+      <li>You have been staring at this for eight months and lost the ability to see it.</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>Is this just a prompt that says “be harsh”?</summary><p>No. Harsh is easy and useless. The skill runs a specific sequence — start from the experience, find the one thing, take things away, check the parts nobody sees, decide, rewrite — and each step is there because he did it, repeatedly, on the record.</p></details>
+    <details><summary>Will it just tell me to delete everything?</summary><p>It tells you what to delete and what you get back for deleting it. If your list of ten is genuinely three products, it says that instead.</p></details>
+    <details><summary>What if I disagree with it?</summary><p>Say so. The skill names the fact that would reverse each verdict, because he changed his mind on native apps, on video on the iPod, and on a product name he said he hated. A judgment that no evidence can reverse is a pose.</p></details>
+    <details><summary>Does it swear at me?</summary><p>He did. It does not. Specificity does the same job harder: “this is a settings page pretending to be a product” lands better than an insult, and it tells you what to fix.</p></details>
+    <details><summary>Does it work outside Claude Code?</summary><p>Yes. It is Markdown. Any agent that reads SKILL.md can run it, and you can paste the file into a chat window as a system prompt.</p></details>
+    <details><summary>Is it affiliated with Apple or the Jobs estate?</summary><p>No. It is not affiliated with, endorsed by, or connected to Apple Inc., the Steve Jobs Archive, or the estate of Steve Jobs. It is a lens for looking at your own work, built from what he said in public. Where it writes in his voice, it labels that as imagined.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Ask Steve</strong> — MIT licensed. Built by <a href="https://github.com/bergamett">Matteo Bergamelli</a>. Source on <a href="https://github.com/bergamett/steve-jobs-skill">GitHub</a>.</p>
+    <p>Built from public material: the Stanford commencement address, the 1995 Lost Interview, the WWDC 1997 closing session, the keynotes, “Thoughts on Flash”, the Fortune and All Things Digital interviews, the Steve Jobs Archive's <em>Make Something Wonderful</em>, folklore.org, and Jony Ive's memorial tribute. Every source is linked in the repository.</p>
+    <p>Not affiliated with Apple Inc. or the estate of Steve Jobs.</p>
+  </div>
+</footer>
+
+</body>
+</html>

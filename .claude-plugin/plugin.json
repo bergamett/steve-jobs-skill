@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "steve",
+  "displayName": "Steve",
+  "version": "1.0.0",
+  "description": "Ask Steve. Think like Steve Jobs about whatever you are building: his verdict, the insight underneath, what to cut, the next move, and how to say it in one sentence. Every real quote sourced.",
+  "author": {
+    "name": "Matteo Bergamelli",
+    "url": "https://github.com/bergamett"
+  },
+  "homepage": "https://bergamett.github.io/steve-jobs-skill/",
+  "repository": "https://github.com/bergamett/steve-jobs-skill",
+  "license": "MIT",
+  "keywords": [
+    "steve-jobs",
+    "product",
+    "simplicity",
+    "focus",
+    "strategy",
+    "pitch",
+    "review",
+    "founder",
+    "taste"
+  ]
+}
