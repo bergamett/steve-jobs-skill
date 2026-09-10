@@ -115,7 +115,7 @@ footer a{color:var(--ink)}
     <div class="eyebrow">A skill for Claude Code</div>
     <h1>Ask Steve.</h1>
     <p class="tagline">Not a Steve Jobs chatbot. A Steve Jobs review.</p>
-    <p class="hero-sub">It reads what you actually built, runs it, and tells you the verdict, the insight underneath, what to cut, the next move, and the one sentence that sells it.</p>
+    <p class="hero-sub">It reads what you actually built, runs it, and tells you the verdict, the insight underneath, what to cut, the next move, and the one sentence that sells it. Starting with its own README.</p>
     <div class="cta">
       <a class="btn" href="https://github.com/bergamett/steve-jobs-skill">Get it on GitHub</a>
       <a class="btn ghost" href="#install">Install in 10 seconds</a>
@@ -126,33 +126,34 @@ footer a{color:var(--ink)}
       <div class="bar"><span class="dot" style="background:var(--red)"></span><span class="dot" style="background:var(--yellow)"></span><span class="dot" style="background:var(--green)"></span></div>
 <pre><span class="c">&gt;</span> <span class="b">/steve verdict README.md</span>
 
-<span class="c">Mode: verdict · the README first screen</span>
+<span class="c">Mode: verdict · this repo's own README</span>
 
-<span class="b">Verdict.</span> Not yet. Nothing on the first screen says what this
-does — put the Usage block at the top and it becomes great.
+<span class="b">Verdict.</span> Not yet. The most disciplined README on the
+subject of honest product feedback proves itself entirely
+on a product that does not exist.
 
 <span class="b">What's wrong.</span>
-1. The Introduction says nothing. Forty words of adjectives
-   before a verb that means anything. Cross them out and what
-   is left is "it runs your tasks in order" — which is true,
-   and clear, and you did not say it.
-2. Nine commands to first run, five secrets to invent. A
-   stranger has to learn what a JWT_SECRET is before your
-   product does one thing. That is where you lose them.
-3. Fifteen features, all weighted the same. When everything is
-   listed, nothing is chosen. That is a backlog, not a product.
+1. The proof is invented, and it exists in three different
+   versions. The block here, the example file and the
+   website are three texts of the same run, all labelled
+   real output. Anyone who opens two stops believing the
+   third.
+2. Eleven headings, sixteen hundred words, and you say
+   everything twice. Inside your own demo: "You wrote
+   eleven headings before you told me what it does."
+3. SETUP.md is in the repo root. Its last step reads "run
+   the skill on this README and fix whatever it says." You
+   shipped the note that says it is not finished.
 
-<span class="b">The one thing.</span> <span class="p">"Write a pipeline in ten lines of
-JavaScript. One command runs it."</span>
+<span class="b">The one thing.</span> <span class="p">The sentence is already there. What is
+missing is the line under it: "Point it at this README.
+Here is what it said."</span>
 
-<span class="b">Do this.</span> Put the product in the first ten lines. Then make
-the install match the promise: <span class="p">npx taskflow init</span> writes the
-.env, generates the secrets and migrates. Nine steps become one.
-
-<span class="b">What Steve would say.</span> <span class="c">(imagined)</span> "You wrote eleven headings
-before you told me what it does. Delete ten of them."</pre>
+<span class="b">What Steve would say.</span> <span class="c">(imagined)</span> "You built a machine
+for telling people the truth about their work, and then you
+demoed it on a company you made up."</pre>
     </div>
-    <p class="small" style="margin-top:14px">Real output. Nothing hand-polished.</p>
+    <p class="small" style="margin-top:14px">The skill's verdict on this project's own README, unedited. Every finding was true. All three were fixed in the commit that followed.</p>
   </div>
 </header>
 
@@ -163,7 +164,7 @@ before you told me what it does. Delete ten of them."</pre>
     <div class="grid">
       <div class="card"><div class="k">01</div><h3>It holds the thing</h3><p>Reads your files, runs your CLI, counts the steps from clone to the first moment something works. It never reviews a description of your product.</p></div>
       <div class="card"><div class="k">02</div><h3>It ends with a rewrite</h3><p>A critique that stops at the critique is a roast. Every reply hands back the new headline, the three features that stay, the error message that now tells you what to do.</p></div>
-      <div class="card"><div class="k">03</div><h3>Every quote is sourced</h3><p>Venue, year and link for every line he said, plus a table of the famous ones he never said. Imagined lines are labelled imagined.</p></div>
+      <div class="card"><div class="k">03</div><h3>Every quote is sourced</h3><p>Venue, year, link and a confidence marker on all seventy lines, plus a table of the famous ones he never said. A build job fails if a quote loses its source. Imagined lines are labelled imagined.</p></div>
       <div class="card"><div class="k">04</div><h3>It knows where he was wrong</h3><p>The Cube. MobileMe. “Seven-inch tablets are dead on arrival.” And when to stop listening to him: accessibility, safety-critical domains, and your own usage data.</p></div>
       <div class="card"><div class="k">05</div><h3>It is short</h3><p>One screen. Verdict first. If a sentence does not change what you do next, it is not in there.</p></div>
       <div class="card"><div class="k">06</div><h3>It attacks the work, never you</h3><p>He could be cruel. This is not that. Brutal about the thing, generous about the person who made it.</p></div>
@@ -215,7 +216,7 @@ before you told me what it does. Delete ten of them."</pre>
       </div>
     </div>
     <div class="cta">
-      <a class="btn ghost" href="https://github.com/bergamett/steve-jobs-skill/tree/main/examples">Read all the examples</a>
+      <a class="btn ghost" href="https://github.com/bergamett/steve-jobs-skill/tree/HEAD/examples">Read all the examples</a>
     </div>
   </div>
 </section>
@@ -238,6 +239,9 @@ before you told me what it does. Delete ten of them."</pre>
     <h3>By hand</h3>
     <pre class="code">git clone https://github.com/bergamett/steve-jobs-skill
 cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve</pre>
+
+    <h3>In a plain chat window</h3>
+    <p class="small">There is no folder to read from, so paste <a href="https://github.com/bergamett/steve-jobs-skill/blob/HEAD/dist/steve-full.md"><code class="mono">dist/steve-full.md</code></a> — the same skill flattened into one file.</p>
 
     <p style="margin-top:22px">Then type <code class="mono">/steve</code> and whatever is bothering you.</p>
   </div>

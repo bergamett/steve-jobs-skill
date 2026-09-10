@@ -39,8 +39,10 @@ npx skills add bergamett/steve-jobs-skill
 
 ## 5. Before announcing
 
-Run the skill on this repository's own README and fix whatever it says. That is both the honest thing to do and the demo:
+Already done once: the skill was run on this repository's README, the review is in `examples/self-verdict.md`, and every finding was fixed. Do it again whenever the README changes materially — it is both the honest check and the demo.
 
 ```
 /steve verdict README.md
 ```
+
+`python3 scripts/check_sources.py` runs the same checks continuous integration runs, and `python3 scripts/build_single_file.py` rebuilds `dist/steve-full.md` after any edit to the skill.

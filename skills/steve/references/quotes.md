@@ -31,10 +31,10 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Reported by Walter Isaacson, "The Real Leadership Lessons of Steve Jobs", Harvard Business Review, 2012. **[reported]** <https://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs>
 
 > "Stop! This is crazy."
-> — Said in the 1997 product review that produced the four-quadrant grid, per Isaacson, HBR 2012. **[reported]**
+> — Said in the 1997 product review that produced the four-quadrant grid, per Isaacson, Harvard Business Review, 2012. **[reported]** <https://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs>
 
 > "What are the five products you want to focus on? Get rid of the rest, because they're dragging you down."
-> — Advice to Larry Page, reported by Isaacson, HBR 2012. **[reported]**
+> — Advice to Larry Page, reported by Isaacson, Harvard Business Review, 2012. **[reported]** <https://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs>
 
 > "Mistakes will be made, some people will be pissed off, some people will not know what they're talking about, but I think it's so much better than where things were not very long ago."
 > — WWDC closing session, 1997, on cutting projects. <https://sebastiaanvanderlans.com/steve-jobs-wwdc-1997/>
@@ -48,7 +48,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Macworld keynote, January 2007. <https://singjupost.com/steve-jobs-iphone-2007-presentation-full-transcript/>
 
 > "Simple can be harder than complex: you have to work hard to get your thinking clean to make it simple. But it's worth it in the end because once you get there, you can move mountains."
-> — BusinessWeek, 1998. **[near-verbatim]** Widely reprinted from the interview of 25 May 1998.
+> — BusinessWeek, 25 May 1998. **[near-verbatim]** The original is behind a paywall; the wording is collected with its citation at <https://en.wikiquote.org/wiki/Steve_Jobs>
 
 > "If you make it boot ten seconds faster, you've saved a dozen lives."
 > — To engineer Larry Kenyon, 1983, reported by Andy Hertzfeld. **[reported]** <https://www.folklore.org/Saving_Lives.html>
@@ -77,7 +77,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Jony Ive about him, memorial event, October 2011. **[reported, about him]** <http://www.ianbrown.cc/blog/quotes-about-steve-jobs-and-jonathan-ives-commemorating-speech-transcribed-at-apples-remembering-steve-event/>
 
 > "They begin as fragile, barely formed thoughts, so easily missed, so easily compromised, so easily just squished."
-> — Jony Ive on how Jobs treated new ideas, memorial event, 2011. **[reported, about him]**
+> — Jony Ive on how Jobs treated new ideas, memorial event, 2011. **[reported, about him]** <http://www.ianbrown.cc/blog/quotes-about-steve-jobs-and-jonathan-ives-commemorating-speech-transcribed-at-apples-remembering-steve-event/>
 
 ## 5. Customers and intuition
 
@@ -91,7 +91,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Playboy, 1985, on the Macintosh. <https://www.cultofmac.com/news/25-years-of-mac-the-steve-jobs-playboy-interview>
 
 > "It's not the consumers' job to know what they want."
-> — Attributed to a BusinessWeek exchange, 1998, and repeated in many later profiles. **[near-verbatim]** Use the Playboy and Fortune lines above when you need a solid citation.
+> — Attributed to a BusinessWeek exchange, 1998, and repeated in many later profiles. **[near-verbatim]** <https://en.wikiquote.org/wiki/Steve_Jobs> Use the Playboy and Fortune lines above when you need a citation that does not wobble.
 
 > "It's so easy to fool yourself — to convince yourself that it is when you know in your heart that it isn't."
 > — Fortune, 2008, on knowing a film's story is not working. <https://allaboutstevejobs.com/verbatim/interviews/fortune_2008>
@@ -119,7 +119,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — WWDC closing session, 1997. <https://sebastiaanvanderlans.com/steve-jobs-wwdc-1997/>
 
 > "It's in Apple's DNA that technology alone is not enough. It's technology married with liberal arts, married with the humanities, that yields us the result that makes our hearts sing."
-> — iPad 2 introduction keynote, March 2011. **[near-verbatim across the 2010 and 2011 keynotes]** <https://www.youtube.com/watch?v=OxCT_hKzMH8>
+> — iPad 2 introduction keynote, March 2011. **[near-verbatim across the 2010 and 2011 keynotes]** <https://en.wikiquote.org/wiki/Steve_Jobs>
 
 > "Humans are tool builders, and we build tools that can dramatically amplify our innate human abilities. The personal computer was the bicycle of the mind."
 > — "The Lost Interview", 1995, restating a line he used from 1980 onward. <https://www.danielscrivner.com/articles/steve-jobs-the-lost-interview>
@@ -162,7 +162,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Fortune, 2008. <https://allaboutstevejobs.com/verbatim/interviews/fortune_2008>
 
 > "If something sucks, I tell people to their face. It's my job to be honest."
-> — Reported by Isaacson, HBR 2012. **[reported]** Use it to explain the standard, not to excuse cruelty; see `failures.md`.
+> — Reported by Isaacson, Harvard Business Review, 2012. **[reported]** <https://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs> Use it to explain the standard, not to excuse cruelty; see `failures.md`.
 
 ## 10. Strategy
 
@@ -170,7 +170,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Fortune, 2008. <https://allaboutstevejobs.com/verbatim/interviews/fortune_2008>
 
 > "If we don't cannibalize ourselves, someone else will."
-> — Reported by Isaacson, HBR 2012, on shipping the iPhone against the iPod. **[reported]**
+> — Reported by Isaacson, Harvard Business Review, 2012, on shipping the iPhone against the iPod. **[reported]** <https://hbr.org/2012/04/the-real-leadership-lessons-of-steve-jobs>
 
 > "PCs are going to be like trucks. They're still going to be around, they're still going to have a lot of value, but they're going to be used by one out of X people."
 > — All Things Digital D8, June 2010. <https://allthingsd.com/20100601/steve-jobs-session/>
@@ -188,7 +188,7 @@ Section 14 lists the famous lines he never said. Never use them.
 > — "Thoughts on Flash", published letter, April 2010. <https://en.wikipedia.org/wiki/Thoughts_on_Flash>
 
 > "We're not going to be the first to this party, but we're going to be the best."
-> — iPhone OS 4 event, April 2010, on multitasking. **[near-verbatim]**
+> — iPhone OS 4 event, April 2010, on multitasking. **[near-verbatim]** <https://www.themarginalian.org/2011/10/20/i-steve-steve-jobs-in-his-own-words/>
 
 ## 11. Keynote lines
 
@@ -202,10 +202,10 @@ Section 14 lists the famous lines he never said. Never use them.
 > — Macworld keynote, January 2007. <https://singjupost.com/steve-jobs-iphone-2007-presentation-full-transcript/>
 
 > "1,000 songs in your pocket."
-> — iPod introduction, October 2001. <https://www.youtube.com/watch?v=kN0SVBCJqLs>
+> — iPod introduction, October 2001. <https://www.apple.com/newsroom/2001/10/23Apple-Presents-iPod/>
 
 > "The world's thinnest notebook."
-> — MacBook Air introduction, January 2008.
+> — MacBook Air introduction, January 2008. <https://www.apple.com/newsroom/2008/01/15Apple-Introduces-MacBook-Air-The-Worlds-Thinnest-Notebook/>
 
 > "It's the best iPod we've ever made."
 > — Macworld keynote, January 2007. <https://singjupost.com/steve-jobs-iphone-2007-presentation-full-transcript/>
@@ -215,25 +215,25 @@ Section 14 lists the famous lines he never said. Never use them.
 The Stanford commencement address of 12 June 2005 is the most quoted speech he gave and the full text is published by Stanford. Quote it from the official transcript: <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future."
-> — Stanford commencement address, 2005.
+> — Stanford commencement address, 2005. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "Your time is limited, so don't waste it living someone else's life."
-> — Stanford, 2005.
+> — Stanford, 2005. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "Don't let the noise of others' opinions drown out your own inner voice."
-> — Stanford, 2005.
+> — Stanford, 2005. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life."
-> — Stanford, 2005.
+> — Stanford, 2005. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "Death is very likely the single best invention of Life."
-> — Stanford, 2005.
+> — Stanford, 2005. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "The heaviness of being successful was replaced by the lightness of being a beginner again."
-> — Stanford, 2005, on being fired from Apple.
+> — Stanford, 2005, on being fired from Apple. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says>
 
 > "Stay hungry. Stay foolish."
-> — Stanford, 2005, quoting the farewell message of the Whole Earth Catalog, which he credits in the speech. Attribute it that way; the words are Stewart Brand's publication, the delivery is his.
+> — Stanford, 2005, quoting the farewell message of the Whole Earth Catalog, which he credits in the speech. <https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says> Attribute it that way: the words are Stewart Brand's publication, the delivery is his.
 
 > "You never achieve what you want without falling on your face a few times."
 > — Fresh Air interview, 1996, published in *Make Something Wonderful*. <https://book.stevejobsarchive.com/>
@@ -244,27 +244,38 @@ The Stanford commencement address of 12 June 2005 is the most quoted speech he g
 > — "The Lost Interview", 1995. The Picasso attribution is his, and it is itself disputed; quote the sentence as his line about Apple, not as Picasso scholarship. <https://www.danielscrivner.com/articles/steve-jobs-the-lost-interview>
 
 > "Creativity is just connecting things."
-> — Wired, February 1996, interview with Gary Wolf. **[near-verbatim]** The full passage continues that creative people feel a little guilty because they didn't really do it, they just saw something.
+> — Wired, February 1996, interview with Gary Wolf. **[near-verbatim]** <https://en.wikiquote.org/wiki/Steve_Jobs> The full passage continues that creative people feel a little guilty because they didn't really do it, they just saw something.
 
 > "Creativity equals connecting previously unrelated experiences and insights that others don't see."
 > — Talk at Palo Alto High School, 1996, published in *Make Something Wonderful*. <https://book.stevejobsarchive.com/>
 
 ## 14. What people say he said, and what he actually said
 
-Never put these in his mouth.
+### Never use these
+
+He did not say them, or the words are someone else's. If a line here appears in a reply as his, the skill has failed at the one thing it promises.
 
 | The famous line | The problem | Use instead |
 |---|---|---|
 | "If I'd asked customers what they wanted, they'd have said a faster horse." | Henry Ford is the usual attribution and there is no evidence either man said it. | "We built it for ourselves." (Playboy, 1985) |
-| "Stay hungry, stay foolish" as his own aphorism. | He said it at Stanford in 2005 while explicitly crediting the Whole Earth Catalog's farewell message. | Quote it as him quoting them. |
-| "Innovation distinguishes between a leader and a follower." | Widely printed on posters, no primary source. | "Innovation has nothing to do with how many R&D dollars you have." (Fortune, 1998, near-verbatim) |
-| "Design is not just what it looks like. Design is how it works." | This one is real. New York Times Magazine, 2003. | Use it, cite it. |
-| "People don't know what they want until you show it to them." | A paraphrase that circulates in a dozen wordings. | The Playboy 1985 and Fortune 2008 lines in section 5. |
-| "Real artists ship." | Real, but it was a slogan from a 1983 Mac team retreat, not a philosophical statement about perfection. | Cite Hertzfeld's account. <https://www.folklore.org/Real_Artists_Ship.html> |
-| "One more thing." | Real as a stage device, not as advice. | Only use it as a keynote structure reference. |
-| Anything about Apple after October 2011. | He died on 5 October 2011. | Say "what he might have said", clearly marked as imagined. |
+| "Innovation distinguishes between a leader and a follower." | On a million posters, in no primary source. | "Innovation has nothing to do with how many R&D dollars you have." (Fortune, 1998) |
+| "People don't know what they want until you show it to them." | A paraphrase that circulates in a dozen wordings, none of them his. | The Playboy 1985 and Fortune 2008 lines in section 5. |
+| "Your work is going to fill a large part of your life, so love what you do." | A compression of two separate Stanford sentences into one that was never said. | The Stanford lines in section 12, quoted whole. |
+| "Have the courage to follow your heart and intuition." | Half a Stanford sentence, reworded. | Quote the sentence as it stands in the official transcript. |
 
-And the general rule: if a line sounds like it belongs on a motivational poster and it is not in this file, he probably did not say it.
+### Real, but usually misused
+
+These he did say. The trap is what people do with them.
+
+| The line | What it actually is |
+|---|---|
+| "Stay hungry. Stay foolish." | Real, but he says it at Stanford while explicitly crediting the farewell message of the Whole Earth Catalog. Quote it as him quoting them. |
+| "Design is not just what it looks like and feels like. Design is how it works." | Real: the New York Times Magazine, 2003. Use it and cite it. The half-quote that drops "and feels like" is the common error. |
+| "Real artists ship." | Real, but it was a slogan from a 1983 Macintosh team retreat, not a philosophy of perfection. Cite Hertzfeld's account. |
+| "One more thing." | Real as a stage device, not as advice. Use it only when describing the keynote structure. |
+| "Good artists copy, great artists steal." | He said it, and attributed it to Picasso, who probably did not say it either. Quote it as his line about Apple, not as art history. |
+
+And the general rule: if a line sounds like it belongs on a motivational poster and it is not in this file, he probably did not say it. Anything about Apple after October 2011 is imagination, and must be labelled as such.
 
 ## 15. Sources
 

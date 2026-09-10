@@ -26,7 +26,11 @@ If you cannot source it, it does not go in. This is the only thing that makes th
 
 ## Testing a change
 
-There is no test runner. Do this instead:
+`python3 scripts/check_sources.py` runs the checks that gate every pull request: every quote carries a venue, a year and a link; no line from the never-use table appears anywhere as real; the manifests are valid; `SKILL.md` stays inside its line budget and every reference it names exists. Run it before you push.
+
+If you touched the skill, rebuild the single-file version too: `python3 scripts/build_single_file.py`.
+
+Then judge the change the only way that matters:
 
 1. Install the skill locally: `cp -r skills/steve ~/.claude/skills/steve`
 2. Run it on three real things: a README, a roadmap, a landing page.
