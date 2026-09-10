@@ -52,3 +52,7 @@ Already done once: the skill was run on this repository's README, the review is 
 ```
 
 `python3 scripts/check_sources.py` runs the same checks continuous integration runs, and `python3 scripts/build_single_file.py` rebuilds `dist/steve-full.md` after any edit to the skill.
+
+## 7. Publish the release
+
+Releases → Draft a new release → "Choose a tag" → type `v1.0.0` and pick "Create new tag on publish" → title `Ask Steve 1.0.0` → paste the 1.0.0 section of `CHANGELOG.md` → Publish. That gives the plugin manifest's `version: 1.0.0` something to point at, and gives people a stable link to share.

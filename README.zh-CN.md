@@ -110,7 +110,7 @@ cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve
 
 ```
 skills/steve/
-├── SKILL.md                    123 行：六个模式、推理循环、规则、回复的形状
+├── SKILL.md                    122 行：六个模式、推理循环、规则、回复的形状
 └── references/
     ├── playbooks/              每个模式一份：步骤、输出模板、陷阱
     ├── quotes.md               70 句引言：场合、年份、链接、可信度

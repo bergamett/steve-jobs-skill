@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml"><img src="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml/badge.svg" alt="Every quote has a source"></a>
   <a href="skills/steve/references/quotes.md"><img src="https://img.shields.io/badge/quotes-70%2C%20all%20sourced-1a7f37?style=flat-square" alt="70 quotes, all sourced"></a>
-  <a href="skills/steve/SKILL.md"><img src="https://img.shields.io/badge/SKILL.md-123%20lines-000?style=flat-square" alt="SKILL.md is 123 lines"></a>
+  <a href="skills/steve/SKILL.md"><img src="https://img.shields.io/badge/SKILL.md-122%20lines-000?style=flat-square" alt="SKILL.md is 122 lines"></a>
   <a href="https://skills.sh/bergamett/steve-jobs-skill"><img src="https://skills.sh/b/bergamett/steve-jobs-skill" alt="skills.sh installs"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT"></a>
 </p>
@@ -136,7 +136,7 @@ Real outputs. The two fictional inputs are committed alongside them and labelled
 
 ```
 skills/steve/
-├── SKILL.md                    123 lines: six modes, the loop, the rules, the shape of a reply
+├── SKILL.md                    122 lines: six modes, the loop, the rules, the shape of a reply
 └── references/
     ├── playbooks/              one per mode: steps, output template, traps
     ├── quotes.md               70 quotes: venue, year, link, confidence

@@ -135,7 +135,7 @@ def check_skill() -> None:
         fail("SKILL.md frontmatter has no description")
     elif len(desc.group(1)) > 1024:
         fail(f"SKILL.md description is {len(desc.group(1))} chars; the limit is 1024")
-    n_lines = len(text.split("\n"))
+    n_lines = len(text.splitlines())
     if n_lines > SKILL_LINE_BUDGET:
         fail(f"SKILL.md is {n_lines} lines; the budget is {SKILL_LINE_BUDGET}")
     for ref in re.findall(r"`references/([^`]+)`", text):

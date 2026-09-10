@@ -114,7 +114,7 @@ Output reali. I due input fittizi sono nel repository, etichettati come tali.
 
 ```
 skills/steve/
-├── SKILL.md                    123 righe: sei modalità, il ciclo, le regole, la forma di una risposta
+├── SKILL.md                    122 righe: sei modalità, il ciclo, le regole, la forma di una risposta
 └── references/
     ├── playbooks/              uno per modalità: passi, template di output, trappole
     ├── quotes.md               70 citazioni: luogo, anno, link, affidabilità

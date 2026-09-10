@@ -42,6 +42,6 @@ Everything above was acted on in the commit that follows it. Specifically:
 | Eleven headings, everything said twice | Six headings. The usage block and the FAQ are gone; their two non-duplicate answers moved into the sections that already covered the ground. |
 | `SETUP.md` in the repo root | Moved to `.github/PUBLISHING.md`. |
 | Two badges that assert nothing | Removed. The remaining ones report something checkable, including a continuous-integration job that fails the build if any quote in the skill lacks a source. |
-| Claims that were not literally true | `SKILL.md` is 123 lines, not "under 400". The example count is right. The eight moves in the loop and the fourteen documented principles behind them are now named as different things. |
+| Claims that were not literally true | `SKILL.md` is 122 lines, not "under 400". The example count is right. The eight moves in the loop and the fourteen documented principles behind them are now named as different things. |
 
 That is the whole argument for the skill, and it cost one command to get.

@@ -3,7 +3,7 @@
   "name": "steve",
   "displayName": "Steve",
   "version": "1.0.0",
-  "description": "Ask Steve. Think like Steve Jobs about whatever you are building: his verdict, the insight underneath, what to cut, the next move, and how to say it in one sentence. Every real quote sourced.",
+  "description": "A Steve Jobs review of what you actually built. Point it at a README, a roadmap or a diff and it comes back in one screen: verdict, three findings, a rewrite. 70 quotes, every one with a source.",
   "author": {
     "name": "Matteo Bergamelli",
     "url": "https://github.com/bergamett"

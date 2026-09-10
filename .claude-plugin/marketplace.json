@@ -5,16 +5,24 @@
     "name": "Matteo Bergamelli",
     "url": "https://github.com/bergamett"
   },
-  "description": "Ask Steve: a Steve Jobs reasoning skill for Claude Code.",
+  "description": "Steve: a Steve Jobs review for Claude Code.",
   "plugins": [
     {
       "name": "steve",
       "source": "./",
-      "description": "Ask Steve. Think like Steve Jobs about whatever you are building: verdict, insight, what to cut, next move, the one sentence.",
+      "description": "A Steve Jobs review of what you actually built. Point it at a README, a roadmap or a diff and it comes back in one screen: verdict, three findings, a rewrite. 70 quotes, every one with a source.",
       "version": "1.0.0",
       "category": "productivity",
       "license": "MIT",
-      "keywords": ["steve-jobs", "product", "simplicity", "focus", "strategy", "pitch", "review"]
+      "keywords": [
+        "steve-jobs",
+        "product",
+        "simplicity",
+        "focus",
+        "strategy",
+        "pitch",
+        "review"
+      ]
     }
   ]
 }

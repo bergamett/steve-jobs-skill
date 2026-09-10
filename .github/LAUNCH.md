@@ -8,7 +8,7 @@ Rules for the drafts: every claim must be checkable in the repository (numbers l
 
 **Mode:** pitch · this repository, launch day
 
-*I read the README, `SKILL.md`, the six playbooks, `quotes.md`, `docs/index.html`, the plugin manifests, the CI script and all four commits, and I ran `scripts/check_sources.py`. I could not install the plugin from GitHub or watch a stranger's first run.*
+*I read the README, `SKILL.md`, the six playbooks, `quotes.md`, `docs/index.html`, the plugin manifests, the CI script and all five commits, and I ran `scripts/check_sources.py`. I could not install the plugin from GitHub or watch a stranger's first run.*
 
 **The one thing.** "Somebody with taste looks at the thing you actually made, today, and says the sentence you have been avoiding — and you can check that not one word of it was made up."
 
@@ -40,11 +40,11 @@ Left out on purpose: the six modes, the reference files, the on-demand loading, 
 
 ## The posts
 
-Every number below is checkable at commit `10f3d37`: `grep -c '^> "' skills/steve/references/quotes.md` gives 70, `ls examples/*.md | grep -v README | wc -l` gives 8, `git show --stat 10f3d37` gives the twenty files and the README diff, and `python3 scripts/check_sources.py` prints the rest.
+Every number below is checkable at HEAD; the diff numbers come from the self-review commit, `10f3d37`. `grep -c '^> "' skills/steve/references/quotes.md` gives 70, `ls examples/*.md | grep -v README | wc -l` gives 8, `git show --stat 10f3d37` gives the twenty files and the README diff, and `python3 scripts/check_sources.py` prints the rest.
 
 ### Show HN
 
-**Title** (75 characters)
+**Title** (78 characters)
 
 Show HN: A Steve Jobs review for your repo, in Claude Code. It reviewed itself
 
@@ -56,15 +56,15 @@ Before posting I pointed it at its own README. The output is the README's first 
 
 ### X
 
-(257 characters)
+(274 characters)
 
-A Steve Jobs review for your repo, as a Claude Code skill. /steve verdict README.md reads the files and answers in one screen: verdict, three findings, a rewrite. 70 quotes, each with a source; CI fails if one loses it. It reviewed its own README first. github.com/bergamett/steve-jobs-skill
+A Steve Jobs review for your repo, in Claude Code. /steve verdict README.md reads the file and answers in one screen: verdict, three findings, a rewrite. 70 quotes, each sourced; CI fails if one is not. It reviewed its own README first. github.com/bergamett/steve-jobs-skill
 
 ### Reddit, r/ClaudeAI
 
 **Title:** I made a skill that gives your repo a Steve Jobs review. I ran it on its own README first.
 
-**Body** (138 words)
+**Body** (144 words)
 
 `/plugin marketplace add bergamett/steve-jobs-skill`, then `/plugin install steve@steve`. Then `/steve verdict README.md`, or `cut`, `why`, `next`, `pitch`, `email`.
 
@@ -76,11 +76,11 @@ The first screen of the README is the skill's verdict on that README. Three find
 
 ### GitHub repository description
 
-(178 characters)
+(180 characters)
 
 Not a Steve Jobs chatbot. A Steve Jobs review. A Claude Code skill that reads your repo and answers in one screen: verdict, three findings, a rewrite. 70 quotes, every one sourced.
 
 ## Two things to do before you post
 
 1. The badge and the README tree say `SKILL.md` is 123 lines; `wc -l` says 122. `check_sources.py` counts `len(text.split("\n"))`, which adds one for the newline at the end of the file. Somebody on Hacker News will run `wc` first. Change the script to `len(text.splitlines())`, then the badge and the tree, and the number is safe to use everywhere. The posts above leave the line count out until then.
-2. `.github/PUBLISHING.md` steps 1 to 3 (Pages, the social preview, the description) happen in GitHub's settings, not in a commit. The X post unfurls as a grey box without the preview image.
+2. `.github/PUBLISHING.md` steps 1 to 4 (Pages, the social preview, the description, the branch name) happen in GitHub's settings, not in a commit. The X post unfurls as a grey box without the preview image.
