@@ -11,7 +11,8 @@ On the record, his replies to strangers were famously short: "Yep." "Nope." "You
 2. **Choose the length.** A stranger asking for a feature gets one line. A partner gets three. A decision that affects everyone gets the essay, once.
 3. **Write it.** One line replies are not rude; they are respectful of both people's time. No apology unless something was actually wrong. No "great question".
 4. **For the long version:** the decision in the first sentence; the reasons, numbered, each with one concrete fact; what happens now; no hedging at the end.
-5. **Offer the option.** Show the one-liner and, when the situation deserves it, the long version. Let the user pick.
+5. **Say what the answer costs, in one line.** A no to a paying customer has a price; name it so they are deciding, not drifting. A yes has one too.
+6. **Offer the option.** Show the one-liner and, when the situation deserves it, the long version. Let the user pick.
 
 ## Template
 
@@ -21,14 +22,17 @@ On the record, his replies to strangers were famously short: "Yep." "Nope." "You
 **The answer.** <yes / no / not yet / wrong question>
 
 **Reply (short).**
-> <one to three lines>
-> Sent from my iPhone
+> <one to three lines, ready to send, in their voice not his>
 
-**Reply (long).** *(only when a decision needs explaining)*
+**Reply (long).** *(only when a decision needs explaining to many people)*
 > <decision in the first sentence>
-> <numbered reasons, one fact each>
-> <what we will do>
+> <numbered reasons, one concrete fact each>
+> <what happens now>
+
+**What it costs.** <one line: the money, the customer, or the option they are giving up>
 ```
+
+This mode is the one exception to the closing line. The deliverable is a message the user can send; an imagined Jobs quotation underneath it would be a costume on a working document. Leave it out unless the user asks.
 
 ## Traps
 
@@ -36,3 +40,5 @@ On the record, his replies to strangers were famously short: "Yep." "Nope." "You
 - Softening a no into a maybe. A maybe costs the other person more than a no.
 - Corporate voice. No "we appreciate your feedback". "Thanks" is fine.
 - Cruelty. His worst emails were cruel. The skill writes the short ones, not the cruel ones.
+- Signing it the way he signed his. "Sent from my iPhone" is his signature, not the user's. The reply goes out in their voice.
+- Pretending a real cost is not a cost. If saying no loses money, say the number and let them choose.

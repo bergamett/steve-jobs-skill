@@ -111,6 +111,6 @@ One episode makes a verdict land; two make it a lecture. Pick the one whose *sha
 - Thoughts on Flash, April 2010: https://en.wikipedia.org/wiki/Thoughts_on_Flash
 - Ron Johnson on the Apple Store: https://retailgeek.com/340_ron_johnson_apple/
 - Adam Lashinsky, *Inside Apple* (2012), on the Top 100 and the DRI: https://www.macstories.net/news/inside-apple-reveals-steve-jobs-anecdotes-apples-little-known-facts/
-- iPhone price cut apology, September 2007: https://www.computerworld.com/article/2540787/apple-mac/jobs-apologizes-for-iphone-price-cut--apple-to-issue--100-credit.html
+- iPhone price cut apology, September 2007: https://www.cbc.ca/news/science/apple-offers-apology-to-early-iphone-buyers-after-price-drop-1.644089
 - Retina display, June 2010: https://www.macworld.com/article/205987/retina_display.html
 - The stylus, Time, 2015: https://time.com/4029142/steve-jobs-stylus/
