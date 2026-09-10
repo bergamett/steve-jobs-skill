@@ -2,7 +2,7 @@
 
 Written by the skill itself: `/steve pitch` pointed at this repository. Nothing below has been edited.
 
-Rules for the drafts: every claim must be checkable in the repository (numbers like "70 quotes", "123 lines", "eight examples" are fine; "revolutionary" is not). The skill's own rules on voice apply to the posts too: no corporate words, no exclamation marks, no emoji.
+Rules for the drafts: every claim must be checkable in the repository (numbers like "70 quotes", "122 lines", "eight examples" are fine; "revolutionary" is not). The skill's own rules on voice apply to the posts too: no corporate words, no exclamation marks, no emoji.
 
 ---
 
