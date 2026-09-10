@@ -57,6 +57,12 @@ h1{font-size:clamp(46px,10vw,96px);font-weight:700;letter-spacing:-.045em}
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn:hover{opacity:.85}
 
+/* demo */
+.demo{display:block;width:100%;height:auto;margin-top:34px;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.14)}
+details.astext{border:0;padding:10px 0 0}
+details.astext summary{font-size:14px;color:var(--muted);font-weight:500}
+details.astext .term{margin-top:12px}
+
 /* terminal */
 .term{background:var(--term-bg);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:34px;box-shadow:0 20px 50px rgba(0,0,0,.14);max-width:100%}
 .term .bar{display:flex;gap:8px;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.07)}
@@ -122,6 +128,8 @@ footer a{color:var(--ink)}
       <a class="btn ghost" href="#examples">See a real answer</a>
     </div>
 
+    <img class="demo" src="demo.svg" alt="Animated terminal: /steve verdict README.md returns a verdict, three findings, the one thing, and an imagined closing line" width="900" height="612">
+    <details class="astext"><summary>The same run as text</summary>
     <div class="term">
       <div class="bar"><span class="dot" style="background:var(--red)"></span><span class="dot" style="background:var(--yellow)"></span><span class="dot" style="background:var(--green)"></span></div>
 <pre><span class="c">&gt;</span> <span class="b">/steve verdict README.md</span>
@@ -153,6 +161,7 @@ Here is what it said."</span>
 for telling people the truth about their work, and then you
 demoed it on a company you made up."</pre>
     </div>
+    </details>
     <p class="small" style="margin-top:14px">The skill's verdict on this project's own README, unedited. Every finding was true. All three were fixed in the commit that followed.</p>
   </div>
 </header>

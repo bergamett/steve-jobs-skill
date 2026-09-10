@@ -6,10 +6,13 @@
 
 <p align="center"><strong>Not a Steve Jobs chatbot. A Steve Jobs review.</strong></p>
 
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.it.md">Italiano</a></p>
+
 <p align="center">
   <a href="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml"><img src="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml/badge.svg" alt="Every quote has a source"></a>
   <a href="skills/steve/references/quotes.md"><img src="https://img.shields.io/badge/quotes-70%2C%20all%20sourced-1a7f37?style=flat-square" alt="70 quotes, all sourced"></a>
   <a href="skills/steve/SKILL.md"><img src="https://img.shields.io/badge/SKILL.md-123%20lines-000?style=flat-square" alt="SKILL.md is 123 lines"></a>
+  <a href="https://skills.sh/bergamett/steve-jobs-skill"><img src="https://skills.sh/b/bergamett/steve-jobs-skill" alt="skills.sh installs"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="MIT"></a>
 </p>
 
@@ -18,6 +21,11 @@ Every other Steve Jobs prompt answers the question *"who was Steve Jobs?"*
 Nobody needs that. You need the other thing: someone who looks at what you actually made, this afternoon, and says the sentence you have been avoiding.
 
 So here is the skill pointed at this page, before it was fixed.
+
+<p align="center"><img src="assets/demo.svg" alt="Animated terminal: /steve verdict README.md returns a verdict, three findings, the one thing, and an imagined closing line" width="820"></p>
+
+<details>
+<summary>The same run as text</summary>
 
 ```
 > /steve verdict README.md
@@ -51,6 +59,8 @@ said."
 What Steve would say. (imagined) "You built a machine for telling people the
 truth about their work, and then you demoed it on a company you made up."
 ```
+
+</details>
 
 Every finding was true. All three are fixed in the commit that followed, and the full review with the diff it produced is in [`examples/self-verdict.md`](examples/self-verdict.md). That is the whole argument, and it cost one command.
 
@@ -149,3 +159,12 @@ Built from public material: the Stanford commencement address, the 1995 Lost Int
 This project is not affiliated with, endorsed by, or connected to Apple Inc., the Steve Jobs Archive, or the estate of Steve Jobs. It is a lens for looking at your own work, built from what he said in public. It is not him, it does not channel him, and it does not claim to know what he would have thought. Where it writes in his voice, it says so.
 
 MIT licensed. See [LICENSE](LICENSE).
+
+<p align="center">
+  <a href="https://star-history.com/#bergamett/steve-jobs-skill&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=bergamett/steve-jobs-skill&type=Date&theme=dark">
+      <img alt="Star history" src="https://api.star-history.com/svg?repos=bergamett/steve-jobs-skill&type=Date" width="600">
+    </picture>
+  </a>
+</p>

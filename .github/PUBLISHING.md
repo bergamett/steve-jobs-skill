@@ -1,5 +1,7 @@
 # Publishing checklist
 
+The launch copy — Show HN title, first comment, X post, Reddit post, repo description — is in `LAUNCH.md` next to this file. The skill wrote it about itself with `/steve pitch`.
+
 Two things have to be switched on in GitHub's web interface. Neither can be done from a commit.
 
 ## 1. Turn on the website
@@ -20,7 +22,11 @@ Description: `Not a Steve Jobs chatbot. A Steve Jobs review. A skill for Claude 
 Website: `https://bergamett.github.io/steve-jobs-skill/`
 Topics: `claude-code`, `claude-skills`, `agent-skills`, `skill`, `steve-jobs`, `product-management`, `ai-agents`, `product-design`
 
-## 4. Check the install paths work
+## 4. Give the default branch a plain name
+
+The code landed on `claude/steve-jobs-skill-qw40tx`, which became the default branch because the repository was empty. Settings → Branches → rename it to `main`. GitHub redirects the old name, and nothing in the repo hard-codes a branch: every link uses `HEAD`, the plugin manifests use `./`, and `npx skills` reads whatever the default is.
+
+## 5. Check the install paths work
 
 After the branch is the default branch (it already is, since the repository was empty when this landed):
 
@@ -37,7 +43,7 @@ npx skills add bergamett/steve-jobs-skill
 
 `npx skills` finds `skills/steve/SKILL.md` on its own; the plugin path reads `.claude-plugin/marketplace.json`, which declares one plugin named `steve` with source `./`. If you later rename the default branch, nothing here needs to change.
 
-## 5. Before announcing
+## 6. Before announcing
 
 Already done once: the skill was run on this repository's README, the review is in `examples/self-verdict.md`, and every finding was fixed. Do it again whenever the README changes materially — it is both the honest check and the demo.
 

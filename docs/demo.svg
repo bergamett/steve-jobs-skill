@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="612" viewBox="0 0 900 612" role="img" aria-label="Animated terminal: /steve verdict README.md runs on this repository and returns a verdict, three findings, the one thing, and an imagined closing line.">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;font-size:14px;fill:#d2d2d7;white-space:pre}.b{fill:#fff;font-weight:700}.d{fill:#86868b}.g{fill:#7ee787}.w{fill:#fff}</style>
+<rect width="900" height="612" rx="14" fill="#0f0f12"/><rect x="0.5" y="0.5" width="899" height="611" rx="14" fill="none" stroke="#2a2a31"/>
+<circle cx="24" cy="22" r="6" fill="#ff5f57"/><circle cx="44" cy="22" r="6" fill="#febc2e"/><circle cx="64" cy="22" r="6" fill="#28c840"/>
+<line x1="0" y1="44" x2="900" y2="44" stroke="#1f1f25"/>
+<text x="28" y="70" class="d">&gt;</text>
+<defs><clipPath id="c"><rect x="46" y="54" width="0" height="24"><animate attributeName="width" from="0" to="208" dur="1.6s" begin="0.6s" fill="freeze"/></rect></clipPath></defs>
+<text x="46" y="70" class="w" clip-path="url(#c)">/steve verdict README.md</text>
+<rect x="46" y="58" width="8" height="16" fill="#d2d2d7"><animate attributeName="x" from="46" to="250" dur="1.6s" begin="0.6s" fill="freeze"/><animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="3"/><animate attributeName="opacity" to="0" begin="2.5s" dur="0.01s" fill="freeze"/></rect>
+<text x="28" y="112" class="d" opacity="0">Mode: verdict · this repo's own README<animate attributeName="opacity" to="1" begin="2.70s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="156" opacity="0"><tspan class="b">Verdict.</tspan>  Not yet. The most disciplined README on the subject<animate attributeName="opacity" to="1" begin="2.98s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="178" class="" opacity="0">of honest product feedback proves itself entirely on a product<animate attributeName="opacity" to="1" begin="3.26s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="200" class="" opacity="0">that does not exist.<animate attributeName="opacity" to="1" begin="3.54s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="244" opacity="0"><tspan class="b">What's wrong.</tspan><animate attributeName="opacity" to="1" begin="3.82s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="266" class="" opacity="0">1. The proof is invented, and it exists in three different<animate attributeName="opacity" to="1" begin="4.10s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="288" class="" opacity="0">   versions, all labelled real output. Anyone who opens two<animate attributeName="opacity" to="1" begin="4.38s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="310" class="" opacity="0">   of them stops believing the third.<animate attributeName="opacity" to="1" begin="4.66s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="332" class="" opacity="0">2. Eleven headings, sixteen hundred words, and you say<animate attributeName="opacity" to="1" begin="4.94s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="354" class="" opacity="0">   everything twice.<animate attributeName="opacity" to="1" begin="5.22s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="376" class="" opacity="0">3. SETUP.md is in the repo root. Its last step reads "run the<animate attributeName="opacity" to="1" begin="5.50s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="398" class="" opacity="0">   skill on this README and fix whatever it says."<animate attributeName="opacity" to="1" begin="5.78s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="442" opacity="0"><tspan class="b">The one thing.</tspan><animate attributeName="opacity" to="1" begin="6.06s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="464" class="g" opacity="0">"Point it at this README. Here is what it said."<animate attributeName="opacity" to="1" begin="6.34s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="508" class="d" opacity="0">What Steve would say. (imagined)<animate attributeName="opacity" to="1" begin="6.62s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="530" class="" opacity="0">"You built a machine for telling people the truth about their<animate attributeName="opacity" to="1" begin="6.90s" dur="0.01s" fill="freeze"/></text>
+<text x="28" y="552" class="" opacity="0">work, and then you demoed it on a company you made up."<animate attributeName="opacity" to="1" begin="7.18s" dur="0.01s" fill="freeze"/></text>
+</svg>
