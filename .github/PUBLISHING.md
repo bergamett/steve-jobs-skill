@@ -1,58 +1,73 @@
 # Publishing checklist
 
-The launch copy — Show HN title, first comment, X post, Reddit post, repo description — is in `LAUNCH.md` next to this file. The skill wrote it about itself with `/steve pitch`.
+Everything that could be done from a commit is done. What is left lives in GitHub's settings, which this repository's automation is not allowed to touch. Five minutes, in this order. Exact values to paste are given; the launch copy is in `LAUNCH.md` next to this file.
 
-Two things have to be switched on in GitHub's web interface. Neither can be done from a commit.
+## 1. Default branch → `main`  (30 seconds)
 
-## 1. Turn on the website
+`main` already exists and is identical to `claude/steve-jobs-skill-qw40tx` (same commit). Settings → General → **Default branch** → switch icon → choose `main` → Update.
 
-Settings → Pages → **Source: Deploy from a branch** → branch: the branch this code is on → folder: **`/docs`** → Save.
+Then delete the old branch: Code → Branches → trash icon next to `claude/steve-jobs-skill-qw40tx`. Nothing in the repository hard-codes a branch name: links use `HEAD`, the plugin manifests use `./`, `npx skills` reads whatever the default is.
 
-A minute later the site is live at <https://bergamett.github.io/steve-jobs-skill/>. `docs/.nojekyll` is already there so the HTML is served as-is with no build step.
+## 2. Website  (30 seconds)
 
-## 2. Set the social preview
+Settings → Pages → Source: **Deploy from a branch** → Branch: `main`, Folder: **`/docs`** → Save.
 
-Settings → General → Social preview → **Upload an image** → `assets/social-preview.png` (1280×640, already generated).
+Live a minute later at <https://bergamett.github.io/steve-jobs-skill/>. `docs/.nojekyll` is already there, so the HTML is served as-is with no build.
 
-That is the picture that appears when the repo is shared on X, Slack, LinkedIn or Discord. Without it, the unfurl shows a generic grey box with the repo name.
+## 3. Description, website, topics  (1 minute)
 
-## 3. Repository description and topics
+Repository home page → gear icon next to "About".
 
-Description: `Not a Steve Jobs chatbot. A Steve Jobs review. A skill for Claude Code.`
+Description:
+
+```
+Not a Steve Jobs chatbot. A Steve Jobs review. A Claude Code skill that reads your repo and answers in one screen: verdict, three findings, a rewrite. 70 quotes, every one sourced.
+```
+
 Website: `https://bergamett.github.io/steve-jobs-skill/`
-Topics: `claude-code`, `claude-skills`, `agent-skills`, `skill`, `steve-jobs`, `product-management`, `ai-agents`, `product-design`
 
-## 4. Give the default branch a plain name
+Topics (paste one at a time):
 
-The code landed on `claude/steve-jobs-skill-qw40tx`, which became the default branch because the repository was empty. Settings → Branches → rename it to `main`. GitHub redirects the old name, and nothing in the repo hard-codes a branch: every link uses `HEAD`, the plugin manifests use `./`, and `npx skills` reads whatever the default is.
+```
+claude-code  claude-skills  agent-skills  skill  steve-jobs  product-management  product-design  ai-agents  developer-tools  claude
+```
 
-## 5. Check the install paths work
+Untick "Releases", "Packages" and "Deployments" if you want the sidebar quiet; leave "Releases" if you do step 5.
 
-After the branch is the default branch (it already is, since the repository was empty when this landed):
+## 4. Social preview  (30 seconds)
+
+Settings → General → Social preview → Upload an image → `assets/social-preview.png` (1280×640, already generated, same picture as the README hero).
+
+This is the image that appears when the link is shared on X, Slack, LinkedIn or Discord. Without it the unfurl is a grey box.
+
+## 5. Release  (1 minute)
+
+Releases → Draft a new release → "Choose a tag" → type `v1.0.0` → "Create new tag on publish" → Target: `main` → Title: `Ask Steve 1.0.0` → paste the `1.0.0` section of `CHANGELOG.md` → Publish.
+
+That gives the plugin manifest's `version: 1.0.0` something to point at and gives people a stable link.
+
+## 6. Check the two install paths  (1 minute)
+
+In Claude Code:
 
 ```
 /plugin marketplace add bergamett/steve-jobs-skill
 /plugin install steve@steve
+/steve verdict README.md
 ```
 
-and
+In any terminal:
 
 ```
 npx skills add bergamett/steve-jobs-skill
 ```
 
-`npx skills` finds `skills/steve/SKILL.md` on its own; the plugin path reads `.claude-plugin/marketplace.json`, which declares one plugin named `steve` with source `./`. If you later rename the default branch, nothing here needs to change.
+## 7. Post
 
-## 6. Before announcing
+`LAUNCH.md` has the Show HN title and first comment, the X post, the Reddit post. Post Show HN first, on a weekday morning US time, and answer every comment for the first two hours; that is what moves the ranking. When someone says "isn't this just a prompt", link `examples/_baseline-no-skill.md` next to `examples/next-move.md` and nothing else.
 
-Already done once: the skill was run on this repository's README, the review is in `examples/self-verdict.md`, and every finding was fixed. Do it again whenever the README changes materially — it is both the honest check and the demo.
+## Keeping it honest afterwards
 
-```
-/steve verdict README.md
-```
-
-`python3 scripts/check_sources.py` runs the same checks continuous integration runs, and `python3 scripts/build_single_file.py` rebuilds `dist/steve-full.md` after any edit to the skill.
-
-## 7. Publish the release
-
-Releases → Draft a new release → "Choose a tag" → type `v1.0.0` and pick "Create new tag on publish" → title `Ask Steve 1.0.0` → paste the 1.0.0 section of `CHANGELOG.md` → Publish. That gives the plugin manifest's `version: 1.0.0` something to point at, and gives people a stable link to share.
+- Any change to the skill: `python3 scripts/check_sources.py` then `python3 scripts/build_single_file.py`, and commit `dist/steve-full.md` with it. Continuous integration fails otherwise.
+- Any material change to the README: run `/steve verdict README.md` again. The self-review is the demo, and a demo that no longer matches the page is the first thing a visitor notices.
+- New quotes only with venue, year, link and a confidence marker. That rule is the product.
