@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Ask Steve. A Steve Jobs reasoning skill for Claude Code. A terminal shows the command slash steve verdict README.md and a short, blunt verdict.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0c"/>
+      <stop offset="1" stop-color="#141419"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.78" cy="0.32" r="0.62">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="term"><rect x="700" y="86" width="500" height="470" rx="14"/></clipPath>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#spot)"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Inter, 'Segoe UI', Arial, sans-serif" fill="#f5f5f7">
+    <text x="80" y="222" font-size="106" font-weight="700" letter-spacing="-4.5">Ask Steve.</text>
+    <text x="84" y="278" font-size="25" font-weight="600" fill="#e8e8ed">Not a Steve Jobs chatbot. A Steve Jobs review.</text>
+    <text x="84" y="332" font-size="20" fill="#a1a1a6">It reads what you actually built, runs it, and tells you</text>
+    <text x="84" y="360" font-size="20" fill="#a1a1a6">the verdict, what to cut, and the one sentence that sells it.</text>
+    <g font-size="18" fill="#86868b">
+      <text x="84" y="424">verdict · why · cut · next · pitch · email</text>
+      <text x="84" y="456">Every real quote sourced. Imagined lines marked.</text>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">
+      <rect x="84" y="500" width="378" height="46" rx="9" fill="#1c1c22" stroke="#2c2c33"/>
+      <text x="102" y="530" fill="#8e8e93">$</text>
+      <text x="122" y="530" fill="#f5f5f7">npx skills add bergamett/steve-jobs-skill</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="700" y="86" width="500" height="470" rx="14" fill="#101014" stroke="#2a2a31"/>
+    <rect x="700" y="86" width="500" height="1" fill="url(#glow)"/>
+    <circle cx="724" cy="108" r="6" fill="#ff5f57"/>
+    <circle cx="744" cy="108" r="6" fill="#febc2e"/>
+    <circle cx="764" cy="108" r="6" fill="#28c840"/>
+    <g clip-path="url(#term)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14.5" fill="#d2d2d7">
+      <text x="722" y="150" fill="#8e8e93">&gt;</text>
+      <text x="740" y="150" fill="#ffffff">/steve verdict README.md</text>
+
+      <text x="722" y="182" fill="#86868b">Mode: verdict · the TaskFlow Pro README</text>
+
+      <text x="722" y="214" fill="#ffffff" font-weight="700">Verdict.</text>
+      <text x="798" y="214">Not yet. Nothing on the first</text>
+      <text x="722" y="235">screen says what this does.</text>
+
+      <text x="722" y="267" fill="#ffffff" font-weight="700">What's wrong.</text>
+      <text x="722" y="288">1. Forty words of adjectives before a verb</text>
+      <text x="722" y="309">   that means anything.</text>
+      <text x="722" y="330">2. Nine commands to first run, five secrets</text>
+      <text x="722" y="351">   to invent. That is where you lose them.</text>
+      <text x="722" y="372">3. Fifteen features, all weighted the same.</text>
+      <text x="722" y="393">   That is a backlog, not a product.</text>
+
+      <text x="722" y="425" fill="#ffffff" font-weight="700">The one thing.</text>
+      <text x="722" y="446" fill="#7ee787">"Write a pipeline in ten lines of</text>
+      <text x="722" y="467" fill="#7ee787">JavaScript. One command runs it."</text>
+
+      <text x="722" y="499" fill="#ffffff" font-weight="700">Do this.</text>
+      <text x="798" y="499">Put the product in the first ten</text>
+      <text x="722" y="520">lines. Then make the install match the</text>
+      <text x="722" y="541">promise. Nine steps become one.</text>
+    </g>
+  </g>
+</svg>
