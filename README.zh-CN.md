@@ -8,6 +8,8 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.it.md">Italiano</a></p>
 
+<p align="center"><a href="https://bergamett.github.io/steve-jobs-skill/">bergamett.github.io/steve-jobs-skill</a></p>
+
 其他所有"乔布斯"提示词回答的都是同一个问题："乔布斯是谁？"
 
 没人需要这个。你需要的是另一件事：有人看着你今天下午真正做出来的东西，然后说出那句你一直在回避的话。

@@ -8,6 +8,8 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.it.md">Italiano</a></p>
 
+<p align="center"><a href="https://bergamett.github.io/steve-jobs-skill/">bergamett.github.io/steve-jobs-skill</a></p>
+
 Ogni altro prompt su Steve Jobs risponde alla domanda *"chi era Steve Jobs?"*
 
 Non serve a nessuno. Serve l'altra cosa: qualcuno che guardi quello che hai fatto davvero, oggi pomeriggio, e dica la frase che stai evitando.

@@ -8,6 +8,8 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">中文</a> · <a href="README.it.md">Italiano</a></p>
 
+<p align="center"><a href="https://bergamett.github.io/steve-jobs-skill/">bergamett.github.io/steve-jobs-skill</a></p>
+
 <p align="center">
   <a href="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml"><img src="https://github.com/bergamett/steve-jobs-skill/actions/workflows/check.yml/badge.svg" alt="Every quote has a source"></a>
   <a href="skills/steve/references/quotes.md"><img src="https://img.shields.io/badge/quotes-70%2C%20all%20sourced-1a7f37?style=flat-square" alt="70 quotes, all sourced"></a>
