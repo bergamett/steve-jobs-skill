@@ -1,11 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
-  "name": "steve",
+  "name": "bergamett",
   "owner": {
     "name": "Matteo Bergamelli",
     "url": "https://github.com/bergamett"
   },
-  "description": "Steve: a Steve Jobs review for Claude Code.",
+  "description": "Plugins by Matteo Bergamelli.",
   "plugins": [
     {
       "name": "steve",

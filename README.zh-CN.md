@@ -42,29 +42,35 @@ What Steve would say. (imagined) "你造了一台对人说真话的机器，
 
 ## 安装
 
-**Claude Code**：
+**任何 agent，一行命令。** Claude Code、Codex、Cursor、Gemini CLI、OpenCode：
 
 ```
-/plugin marketplace add bergamett/steve-jobs-skill
-/plugin install steve@steve
+npx skills add bergamett/steve-jobs-skill --global
 ```
 
-**任何能读 SKILL.md 的 agent**（Claude Code、Codex、Cursor、Gemini CLI、OpenCode）：
+然后输入 `/steve`。
 
-```
-npx skills add bergamett/steve-jobs-skill
-```
-
-**手动**：
+**手动安装**，如果你想先看看装的是什么：
 
 ```
 git clone https://github.com/bergamett/steve-jobs-skill
 cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve
 ```
 
+然后输入 `/steve`。
+
+**作为 Claude Code 插件**，如果你习惯用插件管理器：
+
+```
+/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@bergamett
+```
+
+Claude Code 会给插件里的技能加上插件名前缀，避免两个插件抢同一个命令：这条路径下它响应的是 `/steve:steve`，不是 `/steve`。其他完全一样。
+
 **普通聊天窗口**里没有文件夹可读：粘贴 [`dist/steve-full.md`](dist/steve-full.md)，它是同一个技能压平成的单个文件。
 
-然后输入 `/steve` 加上让你烦恼的东西。不指定模式，它会自己选一个并告诉你。
+让你烦恼的东西写在命令后面。不指定模式，它会自己选一个并告诉你。
 
 | 模式 | 回答的问题 | 试试 |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Launch kit
 
-Written by the skill itself: `/steve pitch` pointed at this repository. Nothing below has been edited.
+Written by the skill itself: `/steve pitch` pointed at this repository. Nothing below has been edited except the install commands, which were corrected afterwards against the Claude Code documentation: the marketplace is named `bergamett`, not `steve`, and a skill installed as a plugin answers to `/steve:steve` because Claude Code namespaces plugin skills. The drafts now lead with `npx skills add`, which installs into `~/.claude/skills/` and gives the plain `/steve`.
 
 Rules for the drafts: every claim must be checkable in the repository (numbers like "70 quotes", "122 lines", "eight examples" are fine; "revolutionary" is not). The skill's own rules on voice apply to the posts too: no corporate words, no exclamation marks, no emoji.
 
@@ -66,7 +66,7 @@ A Steve Jobs review for your repo, in Claude Code. /steve verdict README.md read
 
 **Body** (144 words)
 
-`/plugin marketplace add bergamett/steve-jobs-skill`, then `/plugin install steve@steve`. Then `/steve verdict README.md`, or `cut`, `why`, `next`, `pitch`, `email`.
+`npx skills add bergamett/steve-jobs-skill --global`. Then `/steve verdict README.md`, or `cut`, `why`, `next`, `pitch`, `email`. It also installs from the Claude Code plugin manager, where it answers to `/steve:steve`.
 
 It reads the actual files, not your description of them, and answers in one screen: verdict first, three findings at most, then a rewrite. It ends with one imagined line, labelled imagined.
 

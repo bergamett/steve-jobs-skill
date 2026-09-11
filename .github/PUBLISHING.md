@@ -48,19 +48,22 @@ That gives the plugin manifest's `version: 1.0.0` something to point at and give
 
 ## 6. Check the two install paths  (1 minute)
 
-In Claude Code:
+In any terminal, then in Claude Code:
 
 ```
-/plugin marketplace add bergamett/steve-jobs-skill
-/plugin install steve@steve
+npx skills add bergamett/steve-jobs-skill --global
 /steve verdict README.md
 ```
 
-In any terminal:
+The plugin path, which is namespaced — the command has the plugin name in front of it:
 
 ```
-npx skills add bergamett/steve-jobs-skill
+/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@bergamett
+/steve:steve verdict README.md
 ```
+
+Both should produce the same answer. If the second one errors, check that `.claude-plugin/marketplace.json` still declares the marketplace as `bergamett` and the plugin as `steve`.
 
 ## 7. Post
 

@@ -68,29 +68,35 @@ Every finding was true. All three are fixed in the commit that followed, and the
 
 ## Install
 
-**Claude Code** — one line, then one more:
+**Any agent, one line.** Claude Code, Codex, Cursor, Gemini CLI, OpenCode:
 
 ```
-/plugin marketplace add bergamett/steve-jobs-skill
-/plugin install steve@steve
+npx skills add bergamett/steve-jobs-skill --global
 ```
 
-**Any agent that reads SKILL.md** (Claude Code, Codex, Cursor, Gemini CLI, OpenCode):
+Then type `/steve`.
 
-```
-npx skills add bergamett/steve-jobs-skill
-```
-
-**By hand:**
+**By hand,** if you would rather see what you are installing:
 
 ```
 git clone https://github.com/bergamett/steve-jobs-skill
 cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve
 ```
 
-**In a plain chat window,** where there is no folder to read from: paste [`dist/steve-full.md`](dist/steve-full.md), which is the same skill flattened into one file.
+Then type `/steve`.
 
-Then type `/steve` and whatever is bothering you. No mode? It picks one and tells you which.
+**As a Claude Code plugin,** if you keep everything in the plugin manager:
+
+```
+/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@bergamett
+```
+
+Claude Code namespaces plugin skills to keep two plugins from claiming the same command, so on this path it answers to `/steve:steve`, not `/steve`. Everything else is identical.
+
+**In a plain chat window,** where there is no folder to read from: paste [`dist/steve-full.md`](dist/steve-full.md), the same skill flattened into one file.
+
+Whatever is bothering you goes after the command. No mode? It picks one and tells you which.
 
 | Mode | The question it answers | Try |
 |---|---|---|

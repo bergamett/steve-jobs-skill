@@ -235,24 +235,26 @@ demoed it on a company you made up."</pre>
 <section id="install">
   <div class="wrap">
     <h2>Install</h2>
-    <p class="lede">Two lines in Claude Code. One line anywhere else.</p>
+    <p class="lede">One line, in any agent that reads a SKILL.md.</p>
 
-    <h3 style="margin-top:26px">Claude Code</h3>
-    <pre class="code">/plugin marketplace add bergamett/steve-jobs-skill
-/plugin install steve@steve</pre>
-
-    <h3>Any agent that reads SKILL.md</h3>
-    <pre class="code">npx skills add bergamett/steve-jobs-skill</pre>
-    <p class="small">Claude Code, Codex, Cursor, Gemini CLI, OpenCode.</p>
+    <h3 style="margin-top:26px">Any agent, one line</h3>
+    <pre class="code">npx skills add bergamett/steve-jobs-skill --global</pre>
+    <p class="small">Claude Code, Codex, Cursor, Gemini CLI, OpenCode. Then type <code class="mono">/steve</code>.</p>
 
     <h3>By hand</h3>
     <pre class="code">git clone https://github.com/bergamett/steve-jobs-skill
 cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve</pre>
+    <p class="small">Then type <code class="mono">/steve</code>.</p>
+
+    <h3>As a Claude Code plugin</h3>
+    <pre class="code">/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@bergamett</pre>
+    <p class="small">Claude Code namespaces plugin skills so two plugins cannot claim the same command, so on this path it answers to <code class="mono">/steve:steve</code>, not <code class="mono">/steve</code>. Everything else is identical.</p>
 
     <h3>In a plain chat window</h3>
     <p class="small">There is no folder to read from, so paste <a href="https://github.com/bergamett/steve-jobs-skill/blob/HEAD/dist/steve-full.md"><code class="mono">dist/steve-full.md</code></a> — the same skill flattened into one file.</p>
 
-    <p style="margin-top:22px">Then type <code class="mono">/steve</code> and whatever is bothering you.</p>
+    <p style="margin-top:22px">Whatever is bothering you goes after the command.</p>
   </div>
 </section>
 

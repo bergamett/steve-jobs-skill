@@ -46,29 +46,35 @@ Tutte e tre le osservazioni erano vere. Sono state corrette nel commit successiv
 
 ## Installazione
 
-**Claude Code**:
+**Qualsiasi agente, una riga.** Claude Code, Codex, Cursor, Gemini CLI, OpenCode:
 
 ```
-/plugin marketplace add bergamett/steve-jobs-skill
-/plugin install steve@steve
+npx skills add bergamett/steve-jobs-skill --global
 ```
 
-**Qualsiasi agente che legge SKILL.md** (Claude Code, Codex, Cursor, Gemini CLI, OpenCode):
+Poi scrivi `/steve`.
 
-```
-npx skills add bergamett/steve-jobs-skill
-```
-
-**A mano**:
+**A mano,** se preferisci vedere cosa stai installando:
 
 ```
 git clone https://github.com/bergamett/steve-jobs-skill
 cp -r steve-jobs-skill/skills/steve ~/.claude/skills/steve
 ```
 
-**In una finestra di chat**, dove non c'è una cartella da leggere: incolla [`dist/steve-full.md`](dist/steve-full.md), la stessa skill appiattita in un solo file.
+Poi scrivi `/steve`.
 
-Poi scrivi `/steve` e quello che ti preoccupa. Senza modalità, ne sceglie una e ti dice quale.
+**Come plugin di Claude Code,** se tieni tutto nel gestore dei plugin:
+
+```
+/plugin marketplace add bergamett/steve-jobs-skill
+/plugin install steve@bergamett
+```
+
+Claude Code mette le skill dei plugin sotto il nome del plugin, per evitare che due plugin si contendano lo stesso comando: su questo percorso risponde a `/steve:steve`, non a `/steve`. Per il resto è identica.
+
+**In una finestra di chat,** dove non c'è una cartella da leggere: incolla [`dist/steve-full.md`](dist/steve-full.md), la stessa skill appiattita in un solo file.
+
+Quello che ti preoccupa lo scrivi dopo il comando. Senza modalità, ne sceglie una e ti dice quale.
 
 | Modalità | La domanda a cui risponde | Prova |
 |---|---|---|
